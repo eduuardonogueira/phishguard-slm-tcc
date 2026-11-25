@@ -4,10 +4,10 @@
  "cruzado": false,
  "parcial": false,
  "teste_hashes": {
-  "dataset_sha256": "f207e80450f45319cc38e1802560d5d4f484a04470f7fc06d81322c0151b9d4a",
-  "splits_sha256": "eb3034bbdbc4a0a671dbbcc749734ed1ae97f64efc2e1e4cc80f11a2e9f28c20"
+  "dataset_sha256": "eea805d52615cca029dfe1a85bd516257f645291b3f0860dc09f553b8a16f248",
+  "splits_sha256": "925a0bf3054f04075d8448a44227b9d1676ab649adf981d47c541155d5c1086f"
  },
- "limiar_validacao": 0.5,
+ "limiar_validacao": 0.8,
  "n": {
   "teste": 4221,
   "phishing": 1775,
@@ -15,68 +15,68 @@
  },
  "teste_thr0.5": {
   "threshold": 0.5,
-  "accuracy": 0.9389,
-  "precision": 0.9392,
-  "recall": 0.9138,
-  "f1": 0.9263,
+  "accuracy": 0.9476,
+  "precision": 0.94,
+  "recall": 0.9352,
+  "f1": 0.9376,
   "confusion_matrix": {
-   "tn": 2341,
-   "fp": 105,
-   "fn": 153,
-   "tp": 1622
+   "tn": 2340,
+   "fp": 106,
+   "fn": 115,
+   "tp": 1660
   },
-  "roc_auc": 0.9857,
-  "fpr": 0.0429,
-  "average_precision": 0.9779
+  "roc_auc": 0.9896,
+  "fpr": 0.0433,
+  "average_precision": 0.9853
  },
  "teste_thrval": {
-  "threshold": 0.5,
-  "accuracy": 0.9389,
-  "precision": 0.9392,
-  "recall": 0.9138,
-  "f1": 0.9263,
+  "threshold": 0.8,
+  "accuracy": 0.9441,
+  "precision": 0.9466,
+  "recall": 0.9189,
+  "f1": 0.9325,
   "confusion_matrix": {
-   "tn": 2341,
-   "fp": 105,
-   "fn": 153,
-   "tp": 1622
+   "tn": 2354,
+   "fp": 92,
+   "fn": 144,
+   "tp": 1631
   },
-  "roc_auc": 0.9857,
-  "fpr": 0.0429,
-  "average_precision": 0.9779
+  "roc_auc": 0.9896,
+  "fpr": 0.0376,
+  "average_precision": 0.9853
  },
  "realista_thrval": {
-  "threshold": 0.5,
-  "accuracy": 0.9559,
-  "precision": 0.6223,
+  "threshold": 0.8,
+  "accuracy": 0.9608,
+  "precision": 0.6528,
   "recall": 0.9402,
-  "f1": 0.7489,
+  "f1": 0.7706,
   "confusion_matrix": {
-   "tn": 2341,
-   "fp": 105,
+   "tn": 2354,
+   "fp": 92,
    "fn": 11,
    "tp": 173
   },
-  "roc_auc": 0.9894,
-  "fpr": 0.0429,
-  "average_precision": 0.8781
+  "roc_auc": 0.9912,
+  "fpr": 0.0376,
+  "average_precision": 0.9077
  },
  "conferido_thrval": {
-  "threshold": 0.5,
-  "accuracy": 0.9293,
-  "precision": 0.9286,
-  "recall": 0.9239,
-  "f1": 0.9262,
+  "threshold": 0.8,
+  "accuracy": 0.9171,
+  "precision": 0.9223,
+  "recall": 0.9036,
+  "f1": 0.9128,
   "confusion_matrix": {
-   "tn": 199,
-   "fp": 14,
-   "fn": 15,
-   "tp": 182
+   "tn": 198,
+   "fp": 15,
+   "fn": 19,
+   "tp": 178
   },
-  "roc_auc": 0.9776,
-  "fpr": 0.0657,
-  "average_precision": 0.9715
+  "roc_auc": 0.9746,
+  "fpr": 0.0704,
+  "average_precision": 0.969
  },
  "n_conferido": 410,
- "avaliado_em": "2026-11-17T21:36:34"
+ "avaliado_em": "2026-11-25T09:53:06"
 }

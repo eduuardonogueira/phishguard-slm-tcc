@@ -3,8 +3,8 @@
   "device": "cpu",
   "threads": 4,
   "n": 197,
-  "p50_ms": 789.11,
-  "p95_ms": 1030.16
+  "p50_ms": 514.27,
+  "p95_ms": 593.05
  },
  "tamanho_pesos_mb": 19.18,
  "nota": "SLM: soma ao modelo base baixado do Hub; latencia sem a extracao das features"

@@ -21,13 +21,13 @@
  ],
  "versao_dataset": "bruto",
  "arquivo_dataset": "datasets/br/dataset.csv",
- "dataset_sha256": "f207e80450f45319cc38e1802560d5d4f484a04470f7fc06d81322c0151b9d4a",
- "splits_sha256": "eb3034bbdbc4a0a671dbbcc749734ed1ae97f64efc2e1e4cc80f11a2e9f28c20",
+ "dataset_sha256": "eea805d52615cca029dfe1a85bd516257f645291b3f0860dc09f553b8a16f248",
+ "splits_sha256": "925a0bf3054f04075d8448a44227b9d1676ab649adf981d47c541155d5c1086f",
  "git": {
-  "commit": "95288c17702827ed8d6767024ccff5bf5d41e929",
+  "commit": "155aa25209d9396d57d78670e893d264aed6a117",
   "sujo": false
  },
- "inicio": "2026-11-17T11:57:49",
+ "inicio": "2026-11-25T09:43:38",
  "status": "concluido",
  "config": {
   "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
@@ -56,11 +56,11 @@
   "external_csv": null
  },
  "treino": {
-  "n_train": 18753,
+  "n_train": 18751,
   "device": "cuda",
   "dtype": "float16",
-  "train_seconds": 250.3,
-  "train_loss": 0.0589
+  "train_seconds": 238.4,
+  "train_loss": 0.06373
  },
- "fim": "2026-11-17T12:02:14"
+ "fim": "2026-11-25T09:48:01"
 }
