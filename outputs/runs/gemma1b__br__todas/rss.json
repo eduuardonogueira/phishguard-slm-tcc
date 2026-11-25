@@ -1,0 +1,9 @@
+{
+ "run": "gemma1b__br__todas",
+ "carga_s": 7.16,
+ "primeira_ms": 2012.6,
+ "rss_mb": 6868.6,
+ "rss_antes_do_modelo_mb": 218.9,
+ "n": 50,
+ "threads": "4"
+}

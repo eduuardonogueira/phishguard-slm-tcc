@@ -1,0 +1,9 @@
+{
+ "run": "qwen05b__br__todas",
+ "carga_s": 5.76,
+ "primeira_ms": 957.0,
+ "rss_mb": 3778.6,
+ "rss_antes_do_modelo_mb": 219.2,
+ "n": 50,
+ "threads": "4"
+}

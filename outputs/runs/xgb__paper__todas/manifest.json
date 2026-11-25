@@ -1,0 +1,48 @@
+{
+ "run": "xgb__paper__todas",
+ "modelo": "xgb",
+ "model_id": "xgboost",
+ "dataset": "paper",
+ "features": "todas",
+ "feature_columns": [
+  "page_rank",
+  "caract_hifen",
+  "activate_days",
+  "is_https",
+  "html_input",
+  "iframe",
+  "dot_count",
+  "https_text",
+  "url_lenght",
+  "suspect_char",
+  "certificate",
+  "ip_format",
+  "redirect"
+ ],
+ "versao_dataset": "normalizado",
+ "arquivo_dataset": "datasets/paper/dataset_normalizado.csv",
+ "dataset_sha256": "047881b8abcd7218f8279778ee0e95a27dfac7f9d982eff33841888822a516f5",
+ "splits_sha256": "a0dba4f87b3158d678efd870e1b0eb240d3606b53f1c5fb28f7c0e74b833836c",
+ "git": {
+  "commit": "95288c17702827ed8d6767024ccff5bf5d41e929",
+  "sujo": false
+ },
+ "inicio": "2026-11-17T10:56:53",
+ "status": "concluido",
+ "config": {
+  "seed": 42
+ },
+ "treino": {
+  "n_train": 33537,
+  "train_seconds": 0.3,
+  "params": {
+   "n_estimators": 300,
+   "max_depth": 6,
+   "learning_rate": 0.1,
+   "subsample": 1.0,
+   "eval_metric": "logloss",
+   "n_jobs": -1
+  }
+ },
+ "fim": "2026-11-17T10:56:53"
+}

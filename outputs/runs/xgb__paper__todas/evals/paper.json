@@ -1,0 +1,65 @@
+{
+ "run": "xgb__paper__todas",
+ "teste": "paper",
+ "cruzado": false,
+ "parcial": false,
+ "teste_hashes": {
+  "dataset_sha256": "047881b8abcd7218f8279778ee0e95a27dfac7f9d982eff33841888822a516f5",
+  "splits_sha256": "a0dba4f87b3158d678efd870e1b0eb240d3606b53f1c5fb28f7c0e74b833836c"
+ },
+ "limiar_validacao": 0.15,
+ "n": {
+  "teste": 8346,
+  "phishing": 4816,
+  "realista": 3796
+ },
+ "teste_thr0.5": {
+  "threshold": 0.5,
+  "accuracy": 0.9694,
+  "precision": 0.9531,
+  "recall": 0.9961,
+  "f1": 0.9741,
+  "confusion_matrix": {
+   "tn": 3294,
+   "fp": 236,
+   "fn": 19,
+   "tp": 4797
+  },
+  "roc_auc": 0.9965,
+  "fpr": 0.0669,
+  "average_precision": 0.9975
+ },
+ "teste_thrval": {
+  "threshold": 0.15,
+  "accuracy": 0.8761,
+  "precision": 0.824,
+  "recall": 0.9985,
+  "f1": 0.9029,
+  "confusion_matrix": {
+   "tn": 2503,
+   "fp": 1027,
+   "fn": 7,
+   "tp": 4809
+  },
+  "roc_auc": 0.9965,
+  "fpr": 0.2909,
+  "average_precision": 0.9975
+ },
+ "realista_thrval": {
+  "threshold": 0.15,
+  "accuracy": 0.7295,
+  "precision": 0.2057,
+  "recall": 1.0,
+  "f1": 0.3412,
+  "confusion_matrix": {
+   "tn": 2503,
+   "fp": 1027,
+   "fn": 0,
+   "tp": 266
+  },
+  "roc_auc": 0.9981,
+  "fpr": 0.2909,
+  "average_precision": 0.9789
+ },
+ "avaliado_em": "2026-11-17T21:56:19"
+}

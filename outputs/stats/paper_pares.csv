@@ -1,0 +1,16 @@
+a,b,delta_ap,delta_ap_ic_inf,delta_ap_ic_sup,p_ap,delta_f1,delta_f1_ic_inf,delta_f1_ic_sup,p_f1,a_acerta_b_erra,a_erra_b_acerta,dominios_discordantes,p_mcnemar,p_ap_holm,p_f1_holm,p_mcnemar_holm,diferenca_ap,diferenca_erros
+qwen05b__paper__todas,qwen05b__paper__corr,3e-05,-0.00079,0.00212,0.792,0.04435,-0.03282,0.27289,0.306,604,139,9,0.32344,1.0,1.0,1.0,empate,empate
+qwen05b__paper__todas,qwen05b__paper__url,0.00128,-9e-05,0.02082,0.162,0.03853,-0.0393,0.25542,0.395,539,138,11,0.38303,1.0,1.0,1.0,empate,empate
+gemma1b__paper__todas,gemma1b__paper__corr,-0.00062,-0.00557,0.02037,0.613,0.00091,-0.00467,0.00737,0.795,33,23,12,0.65472,1.0,1.0,1.0,empate,empate
+gemma1b__paper__todas,gemma1b__paper__url,-0.00262,-0.01828,0.00183,0.575,-0.00757,-0.06356,0.03888,0.773,95,174,16,0.66825,1.0,1.0,1.0,empate,empate
+xgb__paper__todas,xgb__paper__corr,0.02475,7e-05,0.12227,0.021,0.08557,0.00431,0.19013,0.001,1124,67,53,0.18495,0.252,0.012,1.0,empate,empate
+xgb__paper__todas,xgb__paper__url,0.02203,0.00403,0.24535,0.0005,0.10664,0.02259,0.31787,0.0005,1766,341,41,0.03854,0.0075,0.0075,0.57808,significativa,empate
+qwen05b__paper__todas,gemma1b__paper__todas,0.00312,-0.00035,0.0255,0.368,0.02739,-0.05996,0.23625,0.665,451,170,12,0.53192,1.0,1.0,1.0,empate,empate
+qwen05b__paper__todas,xgb__paper__todas,0.00224,1e-05,0.01476,0.022,0.07769,-0.00337,0.33061,0.18,922,78,14,0.20766,0.252,1.0,1.0,empate,empate
+gemma1b__paper__todas,xgb__paper__todas,-0.00089,-0.0191,0.0105,0.908,0.0503,-0.12618,0.29848,0.578,1028,465,23,0.50495,1.0,1.0,1.0,empate,empate
+qwen05b__paper__corr,gemma1b__paper__corr,0.00248,-0.00046,0.0385,0.508,-0.01606,-0.0995,0.01245,0.572,53,227,14,0.40357,1.0,1.0,1.0,empate,empate
+qwen05b__paper__corr,xgb__paper__corr,0.02696,8e-05,0.13321,0.025,0.1189,-0.13053,0.42737,0.36,2071,635,52,0.36125,0.252,1.0,1.0,empate,empate
+gemma1b__paper__corr,xgb__paper__corr,0.02449,-0.00518,0.11867,0.192,0.13496,-0.10222,0.4742,0.252,2084,474,57,0.3056,1.0,1.0,1.0,empate,empate
+qwen05b__paper__url,gemma1b__paper__url,-0.00077,-0.0129,0.00108,0.428,-0.01871,-0.08829,-0.00017,0.04,49,248,16,0.24764,1.0,0.44,1.0,empate,empate
+qwen05b__paper__url,xgb__paper__url,0.02299,0.00406,0.23717,0.0005,0.1458,0.0196,0.41212,0.0005,1915,47,45,0.06837,0.0075,0.0075,0.88885,significativa,empate
+gemma1b__paper__url,xgb__paper__url,0.02376,0.00429,0.25041,0.0005,0.16451,0.03197,0.45006,0.0005,2101,34,52,0.04871,0.0075,0.0075,0.68194,significativa,empate

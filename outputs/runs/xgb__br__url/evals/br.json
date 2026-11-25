@@ -1,0 +1,82 @@
+{
+ "run": "xgb__br__url",
+ "teste": "br",
+ "cruzado": false,
+ "parcial": false,
+ "teste_hashes": {
+  "dataset_sha256": "887773ee08ff6ac94654706295405dd2c6008504a9466622c6329f73f1ae4779",
+  "splits_sha256": "eb3034bbdbc4a0a671dbbcc749734ed1ae97f64efc2e1e4cc80f11a2e9f28c20"
+ },
+ "limiar_validacao": 0.3,
+ "n": {
+  "teste": 4221,
+  "phishing": 1775,
+  "realista": 2630
+ },
+ "teste_thr0.5": {
+  "threshold": 0.5,
+  "accuracy": 0.7278,
+  "precision": 0.8589,
+  "recall": 0.422,
+  "f1": 0.5659,
+  "confusion_matrix": {
+   "tn": 2323,
+   "fp": 123,
+   "fn": 1026,
+   "tp": 749
+  },
+  "roc_auc": 0.7603,
+  "fpr": 0.0503,
+  "average_precision": 0.7459
+ },
+ "teste_thrval": {
+  "threshold": 0.3,
+  "accuracy": 0.7555,
+  "precision": 0.8028,
+  "recall": 0.5549,
+  "f1": 0.6562,
+  "confusion_matrix": {
+   "tn": 2204,
+   "fp": 242,
+   "fn": 790,
+   "tp": 985
+  },
+  "roc_auc": 0.7603,
+  "fpr": 0.0989,
+  "average_precision": 0.7459
+ },
+ "realista_thrval": {
+  "threshold": 0.3,
+  "accuracy": 0.8817,
+  "precision": 0.3221,
+  "recall": 0.625,
+  "f1": 0.4251,
+  "confusion_matrix": {
+   "tn": 2204,
+   "fp": 242,
+   "fn": 69,
+   "tp": 115
+  },
+  "roc_auc": 0.8037,
+  "fpr": 0.0989,
+  "average_precision": 0.3843
+ },
+ "conferido_thrval": {
+  "threshold": 0.3,
+  "accuracy": 0.7366,
+  "precision": 0.7908,
+  "recall": 0.6142,
+  "f1": 0.6914,
+  "confusion_matrix": {
+   "tn": 181,
+   "fp": 32,
+   "fn": 76,
+   "tp": 121
+  },
+  "roc_auc": 0.772,
+  "fpr": 0.1502,
+  "average_precision": 0.7878
+ },
+ "n_conferido": 410,
+ "avaliado_em": "2026-11-17T21:56:18"
+}

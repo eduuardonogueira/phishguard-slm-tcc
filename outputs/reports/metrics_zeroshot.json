@@ -1,0 +1,101 @@
+{
+  "tag": "zeroshot",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "use_adapter": false,
+  "num_fewshot": 0,
+  "splits": {
+    "train": {
+      "total": 35167,
+      "phishing": 19518,
+      "legit": 15649
+    },
+    "val": {
+      "total": 7537,
+      "phishing": 4183,
+      "legit": 3354
+    },
+    "test": {
+      "total": 7537,
+      "phishing": 4183,
+      "legit": 3354
+    },
+    "test_realistic": {
+      "total": 3606,
+      "phishing": 252,
+      "legit": 3354
+    }
+  },
+  "predictive": {
+    "test_balanced_thr0.5": {
+      "threshold": 0.5,
+      "accuracy": 0.4397,
+      "precision": 0.0652,
+      "recall": 0.0007,
+      "f1": 0.0014,
+      "confusion_matrix": {
+        "tn": 3311,
+        "fp": 43,
+        "fn": 4180,
+        "tp": 3
+      },
+      "roc_auc": 0.3599
+    },
+    "test_balanced_bestF1": {
+      "threshold": 0.05,
+      "accuracy": 0.555,
+      "precision": 0.555,
+      "recall": 1.0,
+      "f1": 0.7138,
+      "confusion_matrix": {
+        "tn": 0,
+        "fp": 3354,
+        "fn": 0,
+        "tp": 4183
+      },
+      "roc_auc": 0.3599
+    },
+    "test_realistic_thr0.5": {
+      "threshold": 0.5,
+      "accuracy": 0.9185,
+      "precision": 0.0227,
+      "recall": 0.004,
+      "f1": 0.0068,
+      "confusion_matrix": {
+        "tn": 3311,
+        "fp": 43,
+        "fn": 251,
+        "tp": 1
+      },
+      "roc_auc": 0.3566
+    },
+    "test_realistic_bestF1": {
+      "threshold": 0.05,
+      "accuracy": 0.0699,
+      "precision": 0.0699,
+      "recall": 1.0,
+      "f1": 0.1306,
+      "confusion_matrix": {
+        "tn": 0,
+        "fp": 3354,
+        "fn": 0,
+        "tp": 252
+      },
+      "roc_auc": 0.3566
+    }
+  },
+  "operational": {
+    "latency_cpu": {
+      "device": "cpu",
+      "n": 200,
+      "p50_ms": 371.87,
+      "p95_ms": 469.91,
+      "mean_ms": 411.0
+    },
+    "cost": {
+      "adapter_size_mb": 19.18,
+      "process_rss_mb": 4787.29,
+      "note": "Tamanho real do modelo base baixado do Hub nao incluido aqui; quantizacao 4-bit nao roda em Apple Silicon/MPS (ver README)."
+    }
+  },
+  "tuned_threshold": 0.05
+}

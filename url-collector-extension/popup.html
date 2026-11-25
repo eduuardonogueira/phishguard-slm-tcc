@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Phishing Guardian</title>
+    <style>
+        :root {
+            --green: #16a34a;
+            --red: #dc2626;
+            --ink: #0f172a;
+            --muted: #64748b;
+            --line: #e2e8f0;
+            --bg: #ffffff;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            width: 320px;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Helvetica, Arial, sans-serif;
+            color: var(--ink);
+            background: var(--bg);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 18px;
+            background: linear-gradient(135deg, #1e293b, #334155);
+            color: #fff;
+        }
+
+        header .logo { font-size: 22px; line-height: 1; }
+        header h1 { margin: 0; font-size: 16px; font-weight: 700; }
+        header p { margin: 2px 0 0; font-size: 11px; opacity: 0.8; }
+
+        .section { padding: 14px 18px; }
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .label { font-size: 14px; font-weight: 600; }
+        .hint { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+        /* Switch (toggle) */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 44px;
+            height: 24px;
+            flex: 0 0 auto;
+        }
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            inset: 0;
+            background: #cbd5e1;
+            border-radius: 24px;
+            transition: 0.25s;
+        }
+        .slider::before {
+            content: "";
+            position: absolute;
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background: #fff;
+            border-radius: 50%;
+            transition: 0.25s;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        .switch input:checked + .slider { background: var(--green); }
+        .switch input:checked + .slider::before { transform: translateX(20px); }
+
+        .divider { height: 1px; background: var(--line); margin: 0 18px; }
+
+        button#checkBtn {
+            width: 100%;
+            padding: 11px 14px;
+            border: none;
+            border-radius: 10px;
+            background: #2563eb;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button#checkBtn:hover { background: #1d4ed8; }
+        button#checkBtn:disabled { background: #94a3b8; cursor: default; }
+
+        .result {
+            margin-top: 12px;
+            padding: 12px 14px;
+            border-radius: 10px;
+            font-size: 13px;
+            display: none;
+        }
+        .result.show { display: block; }
+        .result .verdict {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        .result .url {
+            margin-top: 6px;
+            font-size: 11px;
+            word-break: break-all;
+            opacity: 0.85;
+        }
+        .result.safe { background: #dcfce7; color: #14532d; }
+        .result.danger { background: #fee2e2; color: #7f1d1d; }
+        .result.error { background: #fef9c3; color: #713f12; }
+        .result.loading {
+            background: #f1f5f9;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .spinner {
+            width: 16px;
+            height: 16px;
+            border: 2px solid #cbd5e1;
+            border-top-color: #2563eb;
+            border-radius: 50%;
+            animation: pg-spin 0.7s linear infinite;
+        }
+        @keyframes pg-spin { to { transform: rotate(360deg); } }
+
+        footer {
+            padding: 10px 18px 14px;
+            font-size: 10px;
+            color: var(--muted);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="logo">🛡️</span>
+        <div>
+            <h1>Phishing Guardian</h1>
+            <p>Detecção de phishing on-device</p>
+        </div>
+    </header>
+
+    <div class="section">
+        <div class="row">
+            <div>
+                <div class="label">Validação automática</div>
+                <div class="hint">Verifica cada site ao navegar</div>
+            </div>
+            <label class="switch">
+                <input type="checkbox" id="autoToggle" />
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+        <button id="checkBtn">Verificar este site agora</button>
+        <div id="result" class="result"></div>
+    </div>
+
+    <footer>Requer o servidor local (phishguard serve) em execução.</footer>
+
+    <script src="dom-features.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+ "criterio": {
+  "metodo": "spearman",
+  "base": "paper/train",
+  "min_com_rotulo": 0.2,
+  "max_entre_features": 0.6
+ },
+ "rho_com_rotulo": {
+  "page_rank": -0.7303,
+  "caract_hifen": 0.3872,
+  "activate_days": 0.5301,
+  "is_https": 0.207,
+  "html_input": -0.186,
+  "iframe": -0.2093,
+  "dot_count": -0.0223,
+  "https_text": -0.0452,
+  "url_lenght": -0.3189,
+  "suspect_char": 0.0648,
+  "certificate": -0.0203,
+  "ip_format": 0.0561,
+  "redirect": 0.0258
+ },
+ "sets": {
+  "todas": [
+   "page_rank",
+   "caract_hifen",
+   "activate_days",
+   "is_https",
+   "html_input",
+   "iframe",
+   "dot_count",
+   "https_text",
+   "url_lenght",
+   "suspect_char",
+   "certificate",
+   "ip_format",
+   "redirect"
+  ],
+  "corr": [
+   "page_rank",
+   "activate_days",
+   "caract_hifen",
+   "url_lenght",
+   "iframe",
+   "is_https"
+  ],
+  "url": []
+ },
+ "descartadas_corr": {
+  "html_input": "fraca: |rho|=0.186 < 0.2",
+  "suspect_char": "fraca: |rho|=0.065 < 0.2",
+  "ip_format": "fraca: |rho|=0.056 < 0.2",
+  "https_text": "fraca: |rho|=0.045 < 0.2",
+  "redirect": "fraca: |rho|=0.026 < 0.2",
+  "dot_count": "fraca: |rho|=0.022 < 0.2",
+  "certificate": "fraca: |rho|=0.020 < 0.2"
+ }
+}

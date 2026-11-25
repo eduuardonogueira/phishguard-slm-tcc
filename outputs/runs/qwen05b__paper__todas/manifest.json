@@ -1,0 +1,66 @@
+{
+ "run": "qwen05b__paper__todas",
+ "modelo": "qwen05b",
+ "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+ "dataset": "paper",
+ "features": "todas",
+ "feature_columns": [
+  "page_rank",
+  "caract_hifen",
+  "activate_days",
+  "is_https",
+  "html_input",
+  "iframe",
+  "dot_count",
+  "https_text",
+  "url_lenght",
+  "suspect_char",
+  "certificate",
+  "ip_format",
+  "redirect"
+ ],
+ "versao_dataset": "bruto",
+ "arquivo_dataset": "datasets/paper/dataset.csv",
+ "dataset_sha256": "68909eac2fb257b2594af823fb800e172877e9ed6012ff8250742a4b8f76b859",
+ "splits_sha256": "a0dba4f87b3158d678efd870e1b0eb240d3606b53f1c5fb28f7c0e74b833836c",
+ "git": {
+  "commit": "95288c17702827ed8d6767024ccff5bf5d41e929",
+  "sujo": false
+ },
+ "inicio": "2026-11-17T10:58:56",
+ "status": "concluido",
+ "config": {
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "seed": 42,
+  "test_size": 0.15,
+  "val_size": 0.15,
+  "realistic_phishing_rate": 0.07,
+  "epochs": 1,
+  "learning_rate": 0.0002,
+  "batch_size": 8,
+  "grad_accum": 2,
+  "max_len": 384,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "lora_target_modules": [
+   "q_proj",
+   "k_proj",
+   "v_proj",
+   "o_proj"
+  ],
+  "max_train_samples": null,
+  "max_eval_samples": null,
+  "num_fewshot": 0,
+  "threshold": 0.5,
+  "external_csv": null
+ },
+ "treino": {
+  "n_train": 33537,
+  "device": "cuda",
+  "dtype": "float16",
+  "train_seconds": 500.6,
+  "train_loss": 0.02858
+ },
+ "fim": "2026-11-17T11:07:46"
+}

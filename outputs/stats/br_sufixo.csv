@@ -1,0 +1,6 @@
+run,n_phish_br,recall_phish_br,n_phish_nao_br,recall_phish_nao_br,n_legit_br,fpr_legit_br,n_legit_nao_br,fpr_legit_nao_br,fpr_legit_nao_br_sem_cdns,n_legit_phreshphish_sem_cdns,fpr_legit_phreshphish_sem_cdns
+gemma1b__br__todas,427,0.8337,1348,0.9458,1941,0.0046,505,0.1644,0.0409,68,0.2059
+qwen05b__br__todas,427,0.8618,1348,0.9303,1941,0.0093,505,0.1723,0.05,68,0.2353
+qwen05b__br__url,427,0.8126,1348,0.9763,1941,0.0041,505,0.1861,0.0659,68,0.2353
+xgb__br__todas,427,0.2717,1348,0.9102,1941,0.0165,505,0.2396,0.1295,68,0.4412
+xgb__br__url,427,0.5457,1348,0.5579,1941,0.0644,505,0.2317,0.2659,68,0.2206

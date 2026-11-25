@@ -1,0 +1,11 @@
+{
+ "latencia_cpu_1url": {
+  "device": "cpu",
+  "threads": 4,
+  "n": 197,
+  "p50_ms": 1124.53,
+  "p95_ms": 1337.76
+ },
+ "tamanho_pesos_mb": 43.25,
+ "nota": "SLM: soma ao modelo base baixado do Hub; latencia sem a extracao das features"
+}

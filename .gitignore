@@ -1,0 +1,24 @@
+__pycache__/
+*.py[oc]
+*.egg-info
+build/
+dist/
+.venv
+.env
+.cache/
+.DS_Store
+
+# Dados: baixados e gerados por `phishguard dados`
+datasets/paper/
+datasets/br/
+datasets/splits/br.csv
+datasets/splits/br.json
+datasets/splits/paper.json
+
+# Artefatos pesados ou com URLs completas gerados pelo treino/avaliação
+outputs/runs/*/adapter/
+outputs/runs/*/model.json
+outputs/runs/*/errors/
+outputs/runs/*__smoke/
+outputs/adapter/_trainer/
+outputs/splits/

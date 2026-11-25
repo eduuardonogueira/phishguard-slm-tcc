@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "Phishing Guardian Extension",
+    "version": "3.0",
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "scripting",
+        "webNavigation",
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "css": ["styles.css"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "iconbit.png",
+            "48": "iconbit.png",
+            "128": "iconbit.png"
+        }
+    },
+    "icons": {
+        "16": "iconbit.png",
+        "48": "iconbit.png",
+        "128": "iconbit.png"
+    }
+}
+
+

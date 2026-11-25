@@ -1,0 +1,82 @@
+{
+ "run": "gemma1b__br__todas",
+ "teste": "br",
+ "cruzado": false,
+ "parcial": false,
+ "teste_hashes": {
+  "dataset_sha256": "f207e80450f45319cc38e1802560d5d4f484a04470f7fc06d81322c0151b9d4a",
+  "splits_sha256": "eb3034bbdbc4a0a671dbbcc749734ed1ae97f64efc2e1e4cc80f11a2e9f28c20"
+ },
+ "limiar_validacao": 0.6,
+ "n": {
+  "teste": 4221,
+  "phishing": 1775,
+  "realista": 2630
+ },
+ "teste_thr0.5": {
+  "threshold": 0.5,
+  "accuracy": 0.95,
+  "precision": 0.9443,
+  "recall": 0.9363,
+  "f1": 0.9403,
+  "confusion_matrix": {
+   "tn": 2348,
+   "fp": 98,
+   "fn": 113,
+   "tp": 1662
+  },
+  "roc_auc": 0.9851,
+  "fpr": 0.0401,
+  "average_precision": 0.9745
+ },
+ "teste_thrval": {
+  "threshold": 0.6,
+  "accuracy": 0.9441,
+  "precision": 0.9466,
+  "recall": 0.9189,
+  "f1": 0.9325,
+  "confusion_matrix": {
+   "tn": 2354,
+   "fp": 92,
+   "fn": 144,
+   "tp": 1631
+  },
+  "roc_auc": 0.9851,
+  "fpr": 0.0376,
+  "average_precision": 0.9745
+ },
+ "realista_thrval": {
+  "threshold": 0.6,
+  "accuracy": 0.9589,
+  "precision": 0.6462,
+  "recall": 0.913,
+  "f1": 0.7568,
+  "confusion_matrix": {
+   "tn": 2354,
+   "fp": 92,
+   "fn": 16,
+   "tp": 168
+  },
+  "roc_auc": 0.9882,
+  "fpr": 0.0376,
+  "average_precision": 0.8336
+ },
+ "conferido_thrval": {
+  "threshold": 0.6,
+  "accuracy": 0.9146,
+  "precision": 0.9133,
+  "recall": 0.9086,
+  "f1": 0.9109,
+  "confusion_matrix": {
+   "tn": 196,
+   "fp": 17,
+   "fn": 18,
+   "tp": 179
+  },
+  "roc_auc": 0.9592,
+  "fpr": 0.0798,
+  "average_precision": 0.9431
+ },
+ "n_conferido": 410,
+ "avaliado_em": "2026-11-17T20:53:20"
+}

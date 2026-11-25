@@ -1,0 +1,59 @@
+{
+ "run": "gemma1b__paper__corr",
+ "modelo": "gemma1b",
+ "model_id": "google/gemma-3-1b-it",
+ "dataset": "paper",
+ "features": "corr",
+ "feature_columns": [
+  "page_rank",
+  "activate_days",
+  "caract_hifen",
+  "url_lenght",
+  "iframe",
+  "is_https"
+ ],
+ "versao_dataset": "bruto",
+ "arquivo_dataset": "datasets/paper/dataset.csv",
+ "dataset_sha256": "68909eac2fb257b2594af823fb800e172877e9ed6012ff8250742a4b8f76b859",
+ "splits_sha256": "a0dba4f87b3158d678efd870e1b0eb240d3606b53f1c5fb28f7c0e74b833836c",
+ "git": {
+  "commit": "697023eea18589e4ac8dc24f815066824cd9a995",
+  "sujo": false
+ },
+ "inicio": "2026-11-17T15:43:38",
+ "status": "concluido",
+ "config": {
+  "model_id": "google/gemma-3-1b-it",
+  "seed": 42,
+  "test_size": 0.15,
+  "val_size": 0.15,
+  "realistic_phishing_rate": 0.07,
+  "epochs": 1,
+  "learning_rate": 0.0002,
+  "batch_size": 8,
+  "grad_accum": 2,
+  "max_len": 384,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "lora_target_modules": [
+   "q_proj",
+   "k_proj",
+   "v_proj",
+   "o_proj"
+  ],
+  "max_train_samples": null,
+  "max_eval_samples": null,
+  "num_fewshot": 0,
+  "threshold": 0.5,
+  "external_csv": null
+ },
+ "treino": {
+  "n_train": 33537,
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "train_seconds": 772.3,
+  "train_loss": 0.02987
+ },
+ "fim": "2026-11-17T15:56:51"
+}

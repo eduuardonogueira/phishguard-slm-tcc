@@ -1,0 +1,58 @@
+{
+ "criterio": {
+  "metodo": "spearman",
+  "base": "br/train",
+  "min_com_rotulo": 0.2,
+  "max_entre_features": 0.6
+ },
+ "rho_com_rotulo": {
+  "page_rank": -0.5213,
+  "caract_hifen": 0.3236,
+  "activate_days": -0.0465,
+  "is_https": -0.2944,
+  "html_input": -0.0351,
+  "iframe": -0.0644,
+  "dot_count": -0.1318,
+  "https_text": 0.0562,
+  "url_lenght": -0.0271,
+  "suspect_char": 0.0787,
+  "certificate": -0.2673,
+  "ip_format": 0.1028,
+  "redirect": 0.0552
+ },
+ "sets": {
+  "todas": [
+   "page_rank",
+   "caract_hifen",
+   "activate_days",
+   "is_https",
+   "html_input",
+   "iframe",
+   "dot_count",
+   "https_text",
+   "url_lenght",
+   "suspect_char",
+   "certificate",
+   "ip_format",
+   "redirect"
+  ],
+  "corr": [
+   "page_rank",
+   "caract_hifen",
+   "is_https"
+  ],
+  "url": []
+ },
+ "descartadas_corr": {
+  "certificate": "redundante com is_https: |rho|=0.760",
+  "dot_count": "fraca: |rho|=0.132 < 0.2",
+  "ip_format": "fraca: |rho|=0.103 < 0.2",
+  "suspect_char": "fraca: |rho|=0.079 < 0.2",
+  "iframe": "fraca: |rho|=0.064 < 0.2",
+  "https_text": "fraca: |rho|=0.056 < 0.2",
+  "redirect": "fraca: |rho|=0.055 < 0.2",
+  "activate_days": "fraca: |rho|=0.047 < 0.2",
+  "html_input": "fraca: |rho|=0.035 < 0.2",
+  "url_lenght": "fraca: |rho|=0.027 < 0.2"
+ }
+}
