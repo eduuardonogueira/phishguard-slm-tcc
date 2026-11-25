@@ -90,6 +90,7 @@ Os scripts de `scripts/` geram as tabelas e figuras complementares a partir das 
 
 ```bash
 uv run --extra figuras python scripts/tcc_extras.py --dataset br
+uv run --extra figuras python scripts/tcc_extras.py --dataset paper   # ou --dataset base
 uv run python scripts/tcc_erros.py
 ```
 

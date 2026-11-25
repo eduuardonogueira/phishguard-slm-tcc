@@ -13,7 +13,8 @@ Precisão numa prevalência π, a partir de TPR e FPR medidos no teste:
     P(π) = TPR·π / (TPR·π + FPR·(1−π))
 É a mesma correção de taxa-base de Axelsson (2000); supõe que TPR e FPR não mudam com π.
 
-Uso:  uv run --with matplotlib python scripts/tcc_extras.py [--dataset br] [--boot 2000]
+Uso:  uv run --extra figuras python scripts/tcc_extras.py [--dataset br|paper|base] [--boot 2000]
+      (``base`` é apelido de ``paper``: o conjunto do trabalho-base, Phishing Guardian)
 """
 
 from __future__ import annotations
@@ -54,11 +55,12 @@ def groups_for(dataset: str) -> dict[str, str]:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--dataset", default="br")
+    ap.add_argument("--dataset", default="br", choices=("br", "paper", "base"),
+                    help="br (PhishBR-URL) ou paper/base (Phishing Guardian, o trabalho-base). Padrão: br.")
     ap.add_argument("--boot", type=int, default=2000)
     ap.add_argument("--seed", type=int, default=42)
     a = ap.parse_args()
-    d = a.dataset
+    d = "paper" if a.dataset == "base" else a.dataset
     runs, missing = load_runs(RUNS, d)
     if missing:
         print("sem scores:", missing)
