@@ -1,6 +1,6 @@
 # PhishGuard SLM
 
-Código para reproduzir o Trabalho de Conclusão de Curso (TCC) de Eduardo Nogueira na Universidade Federal Rural da Amazônia (UFRA, 2026), que avalia modelos de linguagem pequenos (SLMs), executados no próprio computador do usuário, na detecção de URLs de *phishing* dirigidas ao público brasileiro.
+Código para reproduzir o Trabalho de Conclusão de Curso (TCC) *Detecção de phishing localizado (PT-BR) com um small language model executado localmente*, de Eduardo Nogueira, na Universidade Federal Rural da Amazônia (UFRA, 2026). O trabalho avalia modelos de linguagem pequenos (SLMs), executados no próprio computador do usuário, na detecção de URLs de *phishing* dirigidas ao público brasileiro.
 
 O trabalho compara dois modelos de linguagem pequenos (SLMs) ajustados com LoRA, Qwen2.5-0.5B-Instruct e Gemma 3 1B, com o XGBoost do trabalho-base, o Phishing Guardian (Guarizi; Mascarenhas; Moraes, 2025). A comparação usa dois conjuntos de dados, o do trabalho-base e o PhishBR-URL, montado no TCC com *phishing* dirigido ao público brasileiro. O repositório também traz o servidor local e a extensão de navegador que usam o modelo durante a navegação.
 
@@ -124,7 +124,7 @@ Para classificar uma URL no terminal: `uv run phishguard predict "https://exempl
 
 Trabalho de conclusão de curso:
 
-> NOGUEIRA, Eduardo. **[TÍTULO DO TCC]**. 2026. Trabalho de Conclusão de Curso – Universidade Federal Rural da Amazônia, 2026.
+> NOGUEIRA, Eduardo. **Detecção de phishing localizado (PT-BR) com um small language model executado localmente**. 2026. Trabalho de Conclusão de Curso – Universidade Federal Rural da Amazônia, 2026.
 
 Conjunto de dados:
 
