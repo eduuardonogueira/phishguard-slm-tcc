@@ -1,6 +1,6 @@
 run,fn,dominios_fn,pct_top5,top5,fn_sufixo_br,phish_sufixo_br,fn_hospedagem_compartilhada,phish_hospedagem_compartilhada
-gemma1b__br__todas,144,63,0.4792,"google.com (34), decorandu.com.br (13), encurtador.dev (9), localix.com.br (8), locaweb.com.br (5)",0.4931,0.2406,0.1875,0.1589
-qwen05b__br__todas,153,49,0.5882,"essa-vale-a-pena-ver.blogspot.com (37), encurtador.dev (18), google.com (16), decorandu.com.br (13), hotm.art (6)",0.3856,0.2406,0.3333,0.1589
-qwen05b__br__url,112,74,0.2768,"vertoconsultoria.com.br (10), localix.com.br (7), google.com (5), decorandu.com.br (5), mariamuller.com.br (4)",0.7143,0.2406,0.0357,0.1589
-xgb__br__todas,432,99,0.5972,"cosmetologiadobem.com.br (186), coltok.com (23), encurtador.dev (22), decorandu.com.br (16), masa128.net (11)",0.7199,0.2406,0.0023,0.1589
-xgb__br__url,790,229,0.5291,"google.com (312), cosmetologiadobem.com.br (50), encurtador.dev (28), weebly.com (15), ipfs.io (13)",0.2456,0.2406,0.1532,0.1589
+gemma1b__br__todas,173,59,0.5665,"google.com (53), encurtador.dev (17), decorandu.com.br (11), localix.com.br (9), generall.com.br (8)",0.4624,0.2406,0.1329,0.1583
+qwen05b__br__todas,144,64,0.4514,"encurtador.dev (21), google.com (16), decorandu.com.br (13), generall.com.br (8), localix.com.br (7)",0.5625,0.2406,0.0972,0.1583
+qwen05b__br__url,194,70,0.6031,"essa-vale-a-pena-ver.blogspot.com (88), vertoconsultoria.com.br (12), localix.com.br (7), connectbyte.com.br (5), decorandu.com.br (5)",0.3918,0.2406,0.4588,0.1583
+xgb__br__todas,516,113,0.5601,"cosmetologiadobem.com.br (186), hotm.art (35), encurtador.dev (29), coltok.com (23), decorandu.com.br (16)",0.6337,0.2406,0.0155,0.1583
+xgb__br__url,745,205,0.5597,"google.com (311), cosmetologiadobem.com.br (50), encurtador.dev (28), weebly.com (15), ipfs.io (13)",0.2403,0.2406,0.1557,0.1583
